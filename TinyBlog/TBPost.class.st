@@ -70,6 +70,16 @@ TBPost >> initialize [
 ]
 
 { #category : #accessing }
+TBPost >> isUnclassified [
+	^ self category = self class unclassifiedTag 
+]
+
+{ #category : #accessing }
+TBPost >> isVisible [ 
+	^ self visible
+]
+
+{ #category : #accessing }
 TBPost >> notVisible [
 	self visible: false
 ]
