@@ -12,6 +12,22 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
+TBPost class >> title: aTitle text: aText [
+	^ self new
+		title: aTitle;
+		text: aText;
+		yourself
+]
+
+{ #category : #'as yet unclassified' }
+TBPost class >> title: aTitle text: aText category: aCategory [
+	^ (self title: aTitle text: aText)
+		title: aTitle;
+		text: aText;
+		yourself
+]
+
+{ #category : #'as yet unclassified' }
 TBPost class >> unclassifiedTag [
 	^ 'Unclassified'
 ]
