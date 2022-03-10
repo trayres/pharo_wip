@@ -22,14 +22,18 @@ TBPost class >> title: aTitle text: aText [
 { #category : #'as yet unclassified' }
 TBPost class >> title: aTitle text: aText category: aCategory [
 	^ (self title: aTitle text: aText)
-		title: aTitle;
-		text: aText;
+		category: aCategory;
 		yourself
 ]
 
 { #category : #'as yet unclassified' }
 TBPost class >> unclassifiedTag [
 	^ 'Unclassified'
+]
+
+{ #category : #operations }
+TBPost >> beVisible [
+	visible := true
 ]
 
 { #category : #accessing }

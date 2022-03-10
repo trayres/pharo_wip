@@ -30,5 +30,5 @@ post := TBPost
 	text:  'TinyBlog is a small blog engine with Pharo.'.
 	self assert: post title equals: 'Welcome to TinyBlog'.
 	self assert: post category equals: TBPost unclassifiedTag .
-	self deny: post isVisible
+	self deny: post isVisible 
 ]
